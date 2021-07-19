@@ -1,0 +1,12 @@
+# custom alias
+alias zz="source ~/.zshrc"
+
+alias i="sudo apt install"
+#alias u="sudo apt update"
+alias uu="sudo apt update && sudo apt upgrade"
+alias aa="sudo apt autoclean && sudo apt autoremove"
+
+alias n="sudo nano"
+
+alias rn="sudo reboot now"
+alias sd="sudo shutdown now"
