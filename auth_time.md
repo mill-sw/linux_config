@@ -1,4 +1,7 @@
     sudo visudo
 
-### change to this   
+''' change to this
+Defaults        env_reset
+to
 Defaults        env_reset, timestamp_timeout=-1
+'''
