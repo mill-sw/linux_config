@@ -1,5 +1,5 @@
 # custom alias
-alias zz="source ~/.zshrc"
+alias z="source ~/.zshrc"
 
 alias i="sudo apt install"
 #alias u="sudo apt update"
