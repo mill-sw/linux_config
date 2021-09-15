@@ -1,6 +1,9 @@
 ### install docker container
     sudo docker build -t <hub id>/<image name>:<tag name> .
 
+### run image
+    sudo docker run <hub id>/<image name>:<tag name>
+
 ### docker push
     sudo docker push <hub id>/<image name>:<tag name>
     
