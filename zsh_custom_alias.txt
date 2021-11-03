@@ -1,4 +1,4 @@
-# custom alias
+## custom alias
 alias zz="source ~/.zshrc"
 
 alias i="sudo apt install"
