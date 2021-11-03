@@ -1,5 +1,5 @@
 # custom alias
-alias z="source ~/.zshrc"
+alias zz="source ~/.zshrc"
 
 alias i="sudo apt install"
 #alias u="sudo apt update"
@@ -7,6 +7,27 @@ alias uu="sudo apt update && sudo apt upgrade"
 alias aa="sudo apt autoclean && sudo apt autoremove"
 
 alias n="sudo nano"
+alias ge="sudo gedit"
 
 alias rb="sudo reboot now"
 alias sd="sudo shutdown now"
+
+
+## ROS2
+#source /opt/ros/foxy/setup.zsh
+#source /usr/share/colcon_cd/function/colcon_cd.sh
+#export _colcon_cd_root=~/ros2_install
+
+
+## ROS1
+source /opt/ros/noetic/setup.zsh
+source ~/ROS_WS/devel/setup.zsh
+
+export ROS_MASTER_URI=http://192.168.0.5:11311
+export ROS_HOSTNAME=192.168.0.5
+
+
+## carla-ros bridge
+export CARLA_ROOT=/opt/carla-simulator
+export PYTHONPATH=$PYTHONPATH:$CARLA_ROOT/PythonAPI/carla/dist/carla-0.9.11-py3.7>
+source ~/carla-ros-bridge/catkin_ws/devel/setup.zsh 
