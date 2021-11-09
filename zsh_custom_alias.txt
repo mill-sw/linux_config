@@ -7,7 +7,7 @@ alias aa="sudo apt autoclean && sudo apt autoremove"
 alias rr="sudo dpkg -r"
 
 alias nn="sudo nano"
-alias ge="sudo gedit"
+alias gg="sudo gedit"
 
 alias rb="sudo reboot now"
 alias sd="sudo shutdown now"
