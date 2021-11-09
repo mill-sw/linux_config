@@ -29,5 +29,5 @@ export ROS_HOSTNAME=192.168.0.5
 
 ## carla-ros bridge
 export CARLA_ROOT=/opt/carla-simulator
-export PYTHONPATH=$PYTHONPATH:$CARLA_ROOT/PythonAPI/carla/dist/carla-0.9.11-py3.7>
+export PYTHONPATH=$PYTHONPATH:$CARLA_ROOT/PythonAPI/carla/dist/carla-0.9.11-py3.7
 source ~/carla-ros-bridge/catkin_ws/devel/setup.zsh 
