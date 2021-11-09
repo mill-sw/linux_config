@@ -1,5 +1,6 @@
 ## custom alias
-alias zz="source ~/.zshrc"
+alias sz="source ~/.zshrc"
+alias zz="gg ~/.zshrc"
 
 alias ii="sudo apt install"
 alias uu="sudo apt update && sudo apt upgrade"
@@ -22,7 +23,6 @@ alias sd="sudo shutdown now"
 ## ROS1
 source /opt/ros/noetic/setup.zsh
 source ~/ROS_WS/devel/setup.zsh
-
 export ROS_MASTER_URI=http://192.168.0.5:11311
 export ROS_HOSTNAME=192.168.0.5
 
@@ -31,3 +31,13 @@ export ROS_HOSTNAME=192.168.0.5
 export CARLA_ROOT=/opt/carla-simulator
 export PYTHONPATH=$PYTHONPATH:$CARLA_ROOT/PythonAPI/carla/dist/carla-0.9.11-py3.7
 source ~/carla-ros-bridge/catkin_ws/devel/setup.zsh 
+
+
+## GWT
+alias g1="cd ~/gap_sdk/configs && source gapoc_b_v2.sh && cd ~/occupancy_management/gap8_project"
+alias g0="cd ~/OM/gap_sdk/configs && source gapoc_b_v2.sh && cd ~/OM/occupancy_management/gap8_project"
+alias mcar="make clean all run"
+alias mar="make all run"
+alias mc="make clean"
+export GAPY_OPENOCD_CABLE=interface/jlink.cfg
+export OPENOCD_CABLE=interface/jlink.cfg
