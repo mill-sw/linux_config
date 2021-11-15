@@ -2,13 +2,13 @@
 alias sz="source ~/.zshrc"
 alias gz="gg ~/.zshrc"
 
-alias ii="sudo apt install"
-alias uu="sudo apt update && sudo apt upgrade"
-alias aa="sudo apt autoclean && sudo apt autoremove"
-alias rr="sudo dpkg -r"
+alias i="sudo apt install"
+alias u="sudo apt update && sudo apt upgrade"
+alias a="sudo apt autoclean && sudo apt autoremove"
+alias r="sudo dpkg -r"
 
-alias nn="sudo nano"
-alias gg="sudo gedit"
+alias n="sudo nano"
+alias g="sudo gedit"
 
 alias rb="sudo reboot now"
 alias sd="sudo shutdown now"
