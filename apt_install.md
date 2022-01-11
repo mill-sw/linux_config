@@ -3,9 +3,9 @@
     curl \
     perl \
     python-pip \
-    python-venv \
     python3-pip \
     python3-venv \
+    python3-dev \
     gcc \
     gnome-tweaks \
     git \
