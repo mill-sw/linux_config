@@ -1,5 +1,6 @@
     sudo apt install \
     build-essential \
+    cmake \
     curl \
     perl \
     python-pip \
