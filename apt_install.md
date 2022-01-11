@@ -2,3 +2,6 @@
     gnome-tweaks \
     git \
     zsh \
+    snap \
+    
+    
