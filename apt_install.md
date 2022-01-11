@@ -1,4 +1,4 @@
-    sudo apt install\
-    gnome-tweaks\
-    git\
-    zsh\
+    sudo apt install \
+    gnome-tweaks \
+    git \
+    zsh \
