@@ -38,7 +38,7 @@ source ~/carla-ros-bridge/catkin_ws/devel/setup.zsh
 
 
 ## GWT
-alias g0="cd ~/gap_sdk/configs && source gapoc_b_v2.sh && cd ~/occupancy_management/gap8_project_v2"
+alias sgsdk="cd ~/gap_sdk/configs && source gapoc_b_v2.sh && cd ~/occupancy_management/gap8_project_v2"
 
 alias mc="make clean"
 alias mca="make clean all"
