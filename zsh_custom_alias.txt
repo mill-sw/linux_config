@@ -47,9 +47,7 @@ alias ma="make all"
 alias mar="make all run"
 alias mr="make run"
 
-alias mcargv="make clean all run platform=gvsoc runner_args='--vcd'"
-alias margv="make all run platform=gvsoc runner_args='--vcd'"
-alias mrgv="make run platform=gvsoc runner_args='--vcd'"
+alias gv="platform=gvsoc runner_args='--vcd'"
 
 export GAPY_OPENOCD_CABLE=interface/jlink.cfg
 export OPENOCD_CABLE=interface/jlink.cfg
