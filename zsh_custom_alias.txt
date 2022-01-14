@@ -1,4 +1,6 @@
-## custom alias
+########################## CUSTOM ALIAS ##########################
+
+## General
 alias sz="source ~/.zshrc"
 alias z="sudo gedit ~/.zshrc"
 
@@ -12,6 +14,28 @@ alias g="sudo gedit"
 
 alias rb="sudo reboot now"
 alias sd="sudo shutdown now"
+
+
+
+## make
+alias mcar="make clean all run"
+alias mar="make all run"
+alias mc="make clean"
+alias ma="make all"
+alias mr="make run"
+
+
+
+## GWT
+alias sg0="cd ~/gap_sdk/configs && source gapoc_b_v2.sh && cd"
+alias sg1="cd ~/gap_sdk_v4.9.0/configs && source gapoc_b_v2.sh && cd"
+alias om="cd ~/occupancy_management/gap8_project_v2"
+
+alias gv="platform=gvsoc"
+alias gvr="platform=gvsoc runner_args=--vcd"
+
+export GAPY_OPENOCD_CABLE=interface/jlink.cfg
+export OPENOCD_CABLE=interface/jlink.cfg
 
 
 
@@ -35,23 +59,4 @@ export CARLA_ROOT=/opt/carla-simulator
 export PYTHONPATH=$PYTHONPATH:$CARLA_ROOT/PythonAPI/carla/dist/carla-0.9.11-py3.7
 source ~/carla-ros-bridge/catkin_ws/devel/setup.zsh 
 
-
-
-
-
-## GWT
-alias sg0="cd ~/gap_sdk/configs && source gapoc_b_v2.sh && cd"
-alias sg1="cd ~/gap_sdk_v4.9.0/configs && source gapoc_b_v2.sh && cd"
-alias om="cd ~/occupancy_management/gap8_project_v2"
-
-alias mcar="make clean all run"
-alias mar="make all run"
-alias mc="make clean"
-alias ma="make all"
-alias mr="make run"
-
-alias gv="platform=gvsoc"
-alias gvr="platform=gvsoc runner_args=--vcd"
-
-export GAPY_OPENOCD_CABLE=interface/jlink.cfg
-export OPENOCD_CABLE=interface/jlink.cfg
+################################################################
