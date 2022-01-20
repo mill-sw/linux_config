@@ -3,12 +3,12 @@
     sudo fdisk -l   #sudo lsblk -l
     
 ### 2 unmount device
-    sudo umount /dev/sd{name}
+    sudo umount /dev/sdb
     
 ### 3 create image
-    sudo dd if=/dev/sd{name} of=/home/z/sdcard.img
+    sudo dd if=/dev/sdb of=/home/z/sdcard.img
     
 ## paste img
 ### 4 run 1, 2 first and then run 4
-    sudo dd if=/home/z/sdcard.img of-/dev/sd{name}
+    sudo dd if=/home/z/sdcard.img of=/dev/sdb
     
