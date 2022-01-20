@@ -3,7 +3,7 @@
     sudo fdisk -l   #sudo lsblk -l
     
 ### 2 unmount device
-    sudo unmount /dev/sd{name}
+    sudo umount /dev/sd{name}
     
 ### 3 create image
     sudo dd if=/dev/sd{name} of=~/sdcard.img
