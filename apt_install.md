@@ -1,19 +1,14 @@
     sudo apt install \
     build-essential \
     cmake \
-    curl \
     perl \
-    python-pip \
-    python3-pip \
-    python3-venv \
-    python3-dev \
+    python-pip python3-pip python3-venv python3-dev \
     gcc \
     gnome-tweaks \
     git \
     make \
-    snap \
     terminator \
-    wget \
+    curl wget snap\
     virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11 \    #virtualbox
     libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6 \    #anaconda
     zsh \
