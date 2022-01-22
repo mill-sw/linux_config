@@ -1,5 +1,5 @@
 #ZSH_THEME="jonathan"
-ZSH_THEME="gnzh"
+#ZSH_THEME="gnzh"
 
 ########################## CUSTOM ALIAS ##########################
 
