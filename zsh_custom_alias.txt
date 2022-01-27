@@ -18,6 +18,9 @@ alias g="sudo gedit"
 alias rb="sudo reboot now"
 alias sd="sudo shutdown now"
 
+alias python="python3"
+alias pip="pip3"
+
 
 
 ## make
@@ -31,7 +34,7 @@ alias mr="make run"
 
 ## gap8
 alias sg0="cd ~/gap_sdk/configs && source gapoc_b_v2.sh && cd"
-alias sg1="cd ~/gap_sdk_v4.9.0/configs && source gapoc_b_v2.sh && cd"
+alias sg1="cd ~/gap_sdk_v4.7.0/configs && source gapoc_b_v2.sh && cd"
 alias om="cd ~/occupancy_management/gap8_project_v2"
 
 alias gv="make all run platform=gvsoc"
@@ -48,15 +51,11 @@ export OPENOCD_CABLE=interface/jlink.cfg
 #source /usr/share/colcon_cd/function/colcon_cd.sh
 #export _colcon_cd_root=~/ros2_install
 
-
-
 ## ROS1
 source /opt/ros/noetic/setup.zsh
 source ~/ROS_WS/devel/setup.zsh
 export ROS_MASTER_URI=http://192.168.0.5:11311
 export ROS_HOSTNAME=192.168.0.5
-
-
 
 ## carla-ros bridge
 export CARLA_ROOT=/opt/carla-simulator
