@@ -7,6 +7,7 @@
     gnome-tweaks \
     git \
     make \
+    sshpass \
     terminator \
     curl wget snap\
     virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11 \    #virtualbox
