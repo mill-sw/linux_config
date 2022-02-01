@@ -1,12 +1,12 @@
 
 ## PC 
-### download apt
+### download app
     sudo apt install scrcpy
 ### install android sdk
-### find device
-    adb device
 ### run app
     scrcpy
+### to find device
+    adb device
  
-## phone
+## PHONE
 ### developer mode -> usb debug to true (Settings > About phone and tap Build number seven times. Return to the previous screen to find Developer options at the bottom.)
