@@ -1,8 +1,8 @@
 
 ## PC 
+### install android sdk
 ### download app
     sudo apt install scrcpy
-### install android sdk
 ### run app
     scrcpy
 ### to find device
