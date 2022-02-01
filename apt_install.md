@@ -16,4 +16,5 @@
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" \
     
     pip install -U pip \
-    pip3 install -U pip \
+    pip3 install -U pip \ \
+    scrcpy \
