@@ -10,5 +10,5 @@
     
 ## paste img
 ### 4 run 1, 2 first and then run 4
-    sudo dd if=/media/z/e9503728-f419-4a14-9fc0-21e2947af50c/FILE/MVPC10_pi_sdcard.img of=/dev/sdb status=progress conv=noerror    #bs=1M
+    sudo dd if=/media/z/e9503728-f419-4a14-9fc0-21e2947af50c/FILE/MVPC10.img of=/dev/sdb status=progress conv=noerror    #bs=1M
     
