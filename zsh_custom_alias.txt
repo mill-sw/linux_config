@@ -34,6 +34,8 @@ alias mr="make run"
 
 
 ## gap8
+alias gappi="ssh pi@192.168.0.${pi}"
+
 alias sg0="cd ~/gap_sdk/configs && source gapoc_b_v2.sh && cd"
 alias sg1="cd ~/gap_sdk_v4.7.0/configs && source gapoc_b_v2.sh && cd"
 alias om="cd ~/occupancy_management/gap8_project_v2"
