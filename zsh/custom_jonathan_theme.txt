@@ -101,11 +101,11 @@ fi
 
 # Finally, the prompt.
 PROMPT='${PR_SET_CHARSET}${PR_STITLE}${(e)PR_TITLEBAR}\
-${PR_RED}%(!.%SROOT%s.%n)${PR_GREY}@${PR_BLUE}%m:%l  \
+${PR_RED}%(!.%SROOT%s.%n)${PR_GREY}@${PR_BLUE}%m:%l \
 ${PR_YELLOW}%${PR_PWDLEN}<...<%~%<<\
 $(ruby_prompt_info)   \
 
-${PR_YELLOW}%D{%H:%M:%S}  \
+${PR_CYAN}%D{%H:%M:%S} \
 ${PR_LIGHT_BLUE}%{$reset_color%}$(git_prompt_info)$(git_prompt_status) '
 
 # display exitcode on the right when > 0
