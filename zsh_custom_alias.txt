@@ -67,3 +67,4 @@ source ~/carla-ros-bridge/catkin_ws/devel/setup.zsh
 
 ################################################################
 
+### customize theme: sudo nano ~/.oh-my-zsh/themes/{THEME: ie.agnoster}.zsh-theme
