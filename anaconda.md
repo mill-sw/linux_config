@@ -11,3 +11,6 @@
     conda create --name {name} {python=3.8}
 ### update current conda version
     conda update conda
+    
+### set auto base activate
+    conda config --set auto_activate_base False
