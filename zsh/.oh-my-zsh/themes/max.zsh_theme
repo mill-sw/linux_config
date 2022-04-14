@@ -1,3 +1,8 @@
+### PUT THIS FILE IN THE FOLLOWING AND SET zshrc ###
+# ZSH_THEME="max"
+# nano ~/.oh-my-zsh/themes/max.zsh-theme
+#####################################################
+
 function theme_precmd {
   local TERMWIDTH=$(( COLUMNS - ${ZLE_RPROMPT_INDENT:-1} ))
 
