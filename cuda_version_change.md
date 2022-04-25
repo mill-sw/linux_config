@@ -13,7 +13,7 @@
     sudo chmod a+r /usr/local/cuda-8.0/include/cudnn.h /usr/local/cuda-8.0/lib64/libcudnn*
     
 ## 4. Add each CUDA lib directory to LD_LIBRARY_PATH in order
-    sudo sh -c ‘echo export LD_LIBRARY_PATH=/usr/local/cuda/lib64:/usr/local/cuda-10.0/lib64:/usr/local/cuda-8.0/lib64:\$LD_LIBRARY_PATH > /etc/profile.d/cuda.sh’
+    sudo sh -c ‘echo export LD_LIBRARY_PATH=/usr/local/cuda/lib64:/usr/local/cuda-11.3/lib64:/usr/local/cuda-11.6/lib64:/opt/ros/noetic/lib:/opt/ros/noetic/lib/x86_64-linux-gnu:\$LD_LIBRARY_PATH > /etc/profile.d/cuda.sh’
     
 ## 5. Create a conda environment and install the wanted TensorFlow GPU version
     conda create -n tf14 python=2.7.6 pip
