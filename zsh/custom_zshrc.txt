@@ -1,4 +1,5 @@
-############################# CUSTOM VALUES #############################
+############################# ZSH #############################
+
 # Path to your oh-my-zsh installation.
 export ZSH="/home/z/.oh-my-zsh"
 
@@ -8,7 +9,9 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting sudo web-search copypat
 
 source $ZSH/oh-my-zsh.sh
 
-## General
+alias zt="sudo gedit ~/.oh-my-zsh/themes/max.zsh-theme "
+############################# ALIAS #############################
+
 alias sz="source ~/.zshrc"
 alias z="sudo gedit ~/.zshrc"
 
@@ -46,9 +49,9 @@ alias gvr="platform=gvsoc runner_args=--vcd"
 export GAPY_OPENOCD_CABLE=interface/jlink.cfg
 export OPENOCD_CABLE=interface/jlink.cfg
 
-alias gappi='ssh pi@192.168.0.${pi}'
+alias gappi='ssh pi@192.168.0.$pi'
 
-
+############################# ROS #############################
 
 ## ROS2
 #source /opt/ros/foxy/setup.zsh
@@ -69,10 +72,16 @@ export ROS_HOSTNAME=192.168.0.5
 export CARLA_ROOT=/opt/carla-simulator
 #export PYTHONPATH=$PYTHONPATH:$CARLA_ROOT/PythonAPI/carla/dist/carla-0.9.11-py3.7
 #source ~/carla-ros-bridge/catkin_ws/devel/setup.zsh
-###################################################################
+
+############################# CUDA #############################
+
+CUDA_VERSION=11.6
+export PATH="/usr/local/cuda-$CUDA_VERSION/bin:$PATH"
+export LD_LIBRARY_PATH="/usr/local/cuda-$CUDA_VERSION/lib64:$LD_LIBRARY_PATH"
 
 
-# >>> conda initialize >>>
+############################# CONDA #############################
+
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/z/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
@@ -87,8 +96,9 @@ fi
 unset __conda_setup
 
 eval "$(register-python-argcomplete conda)"
-# <<< conda initialize <<<
 
+
+############################# ETC #############################
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/z/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/home/z/Downloads/google-cloud-sdk/path.zsh.inc'; fi
@@ -97,9 +107,8 @@ if [ -f '/home/z/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/home/z/Dow
 if [ -f '/home/z/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/z/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 source /home/z/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-####################################################################
-
-###################### DEFAULT ZSH VALUES ##########################
+ 
+###################### DEFAULT ZSH ##########################
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -137,8 +146,7 @@ source /home/z/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-high
 # COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
+# under VCS as dirty. This makes repository status check for large repositories much, much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time stamp shown in the history command output.
@@ -165,8 +173,3 @@ source /home/z/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-high
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
