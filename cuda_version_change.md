@@ -20,7 +20,7 @@
     conda activate tf14
     pip install tensorflow-gpu==1.4
 
-## 6. Test that it works
+## 6. Test
     python -c “import tensorflow; print(tensorflow.__version__)
     print(tensorflow.test.gpu_device_name())
     print(tensorflow.test.is_gpu_available())”
