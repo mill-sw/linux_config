@@ -1,5 +1,5 @@
 ############################# DOWNLOAD PLUGINS #############################
-## USE ONCE AND THEN COMMENT ALL ##
+########### USE ONCE AND THEN COMMENT ALL ###########
 
 ## MANUAL
 # zsh-autosuggestions
@@ -11,7 +11,7 @@
 #antigen bundle seebi/dircolors-solarized
 #antigen bundle zsh-users/zsh-syntax-highlighting
 
-############################# ANTIGEN #############################
+################################# ANTIGEN #################################
 
 #source /home/$USER/antigen.zsh
 
@@ -34,7 +34,7 @@
 # Tell Antigen that you're done.
 #antigen apply
 
-############################# ZSH #############################
+################################# ZSH #################################
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/$USER/.oh-my-zsh"
@@ -47,7 +47,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias zt="sudo gedit ~/.oh-my-zsh/themes/max.zsh-theme "
 
-############################# ALIAS #############################
+################################# ALIAS #################################
 
 alias sz="source ~/.zshrc"
 alias z="sudo gedit ~/.zshrc"
@@ -86,7 +86,7 @@ export OPENOCD_CABLE=interface/jlink.cfg
 
 alias gappi='ssh pi@192.168.0.$pi'
 
-###################### DEFAULT ZSH ##########################
+############################## DEFAULT ZSH ##################################
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
