@@ -64,7 +64,6 @@ alias o="xdg-open ."
 alias rb="sudo reboot now"
 alias sd="sudo shutdown now"
 
-
 ## make
 alias mcar="make clean all run"
 alias mar="make all run"
@@ -72,8 +71,8 @@ alias mc="make clean"
 alias ma="make all"
 alias mr="make run"
 
+############################## MVPC ##################################
 
-## GWT
 alias sg0="cd ~/gap_sdk/configs && source gapoc_b_v2.sh && cd"
 alias sg1="cd ~/gap_sdk_v4.9.0/configs && source gapoc_b_v2.sh && cd"
 alias om="cd ~/occupancy_management/gap8_project_v2"
