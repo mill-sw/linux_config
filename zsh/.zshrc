@@ -12,6 +12,7 @@
 
 ## zsh-syntax-highlighting
 # git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
 ################################# ZSH #################################
 
 # Path to oh-my-zsh installation.
@@ -73,7 +74,6 @@ export GAPY_OPENOCD_CABLE=interface/jlink.cfg
 export OPENOCD_CABLE=interface/jlink.cfg
 
 alias gappi='ssh pi@192.168.0.$pi'
-
 
 ############################# CONDA #############################
 
