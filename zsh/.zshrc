@@ -95,6 +95,47 @@ export OPENOCD_CABLE=interface/jlink.cfg
 
 alias gappi='ssh pi@192.168.0.$pi'
 
+############################# ROS #############################
+
+## ROS2
+#source /opt/ros/foxy/setup.zsh
+#source /usr/share/colcon_cd/function/colcon_cd.sh
+#export _colcon_cd_root=~/ros2_install
+
+## ROS1
+source /opt/ros/noetic/setup.zsh
+#source ~/ROS_WS/devel/setup.zsh
+export ROS_MASTER_URI=http://192.168.0.5:11311
+export ROS_HOSTNAME=192.168.0.5
+
+## carla-ros bridge
+export CARLA_ROOT=/opt/carla-simulator
+#export PYTHONPATH=$PYTHONPATH:$CARLA_ROOT/PythonAPI/carla/dist/carla-0.9.11-py3.7
+#source ~/carla-ros-bridge/catkin_ws/devel/setup.zsh
+
+############################# CUDA #############################
+
+CUDA_VERSION=11.6
+export PATH="/usr/local/cuda-$CUDA_VERSION/bin:$PATH"
+export LD_LIBRARY_PATH="/usr/local/cuda-$CUDA_VERSION/lib64:$LD_LIBRARY_PATH"
+
+############################# CONDA #############################
+
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/z/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/$USER/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/$USER/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/$USER/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+
+eval "$(register-python-argcomplete conda)"
+
 ########################## DEFAULT ZSH ##############################
 
 # If you come from bash you might have to change your $PATH.
