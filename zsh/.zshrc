@@ -1,17 +1,17 @@
 ################################################################################ DOWNLOAD ONCE
 
-## ANTIGEN
-#curl -L git.io/antigen > antigen.zsh
-#antigen bundle zsh-users/zsh-history-substring-search
-#antigen bundle zsh-users/zsh-autosuggestions
-#antigen bundle zsh-users/zsh-syntax-highlighting
+## ARGCOMPLETE
+#pip3 install argcomplete
+#activate-global-python-argcomplete
+#autoload -U bashcompinit
+#bashcompinit
 
 ## MANUAL
 ## zsh-autosuggestions
-# git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+#git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 ## zsh-syntax-highlighting
-# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+#git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 ################################################################################ ZSH
 
@@ -90,7 +90,9 @@ else
 fi
 unset __conda_setup
 
-eval "$(register-python-argcomplete conda)"
+################################################################################ ETC
+
+eval "$(register-python-argcomplete my-awesome-script)"
 
 ################################################################################ DEFAULT
 
