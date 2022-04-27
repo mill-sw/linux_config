@@ -1,7 +1,9 @@
 ### PUT THIS FILE IN THE FOLLOWING AND SET zshrc ###
 # ZSH_THEME="max"
 # nano ~/.oh-my-zsh/themes/max.zsh-theme
+
 #####################################################
+
 # Set the prompt - Need this so the prompt will work.
 setopt prompt_subst
 
@@ -36,7 +38,7 @@ else
   PR_SET_CHARSET="%{$terminfo[enacs]%}"
 fi
 
-################ PROMPT ################
+######################## PROMPT ########################
 
 PROMPT='${PR_SET_CHARSET}\
 ${PR_RED}%(!.%SROOT%s.%n)${PR_GREY}@${PR_BLUE}%m:%l \
@@ -54,5 +56,3 @@ ${PR_MAGENTA}%D{%a,%b%d}${PR_NO_COLOUR}'
 PS2='${PR_CYAN}\
 ${PR_LIGHT_GREEN}%(_${PR_BLUE})\
 ${PR_CYAN}${PR_NO_COLOUR} '
-
-########################################
