@@ -51,10 +51,10 @@ DISABLE_UPDATE_PROMPT="true"
 # DISABLE_AUTO_UPDATE="true"
 # export UPDATE_ZSH_DAYS=13
 
-## COMMAND
+## COMPLETION
 # ENABLE_CORRECTION="true"
 # CASE_SENSITIVE="true"
-# make _ and - same(Case-sensitive completion must be off) : use hyphen-insensitive completion
+# make _ and - same : CASE_SENSITIVE must be off
 # HYPHEN_INSENSITIVE="true"
 
 ############################# ALIAS #############################
