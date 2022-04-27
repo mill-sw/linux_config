@@ -1,4 +1,4 @@
-######################################## DOWNLOAD PLUGINS: USE ONCE AND THEN COMMENT ALL
+################################################################################ DOWNLOAD ONCE
 
 ## ANTIGEN
 #curl -L git.io/antigen > antigen.zsh
