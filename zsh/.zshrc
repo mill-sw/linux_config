@@ -13,7 +13,7 @@
 ## zsh-syntax-highlighting
 # git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-################################# ZSH #################################
+################################################################################ ZSH
 
 # Path to oh-my-zsh installation.
 export ZSH="/home/$USER/.oh-my-zsh"
@@ -37,7 +37,7 @@ export UPDATE_ZSH_DAYS=30
 # make _ and - same : CASE_SENSITIVE must be off
 # HYPHEN_INSENSITIVE="true"
 
-############################# ALIAS #############################
+################################################################################ ALIAS
 
 alias sz="source ~/.zshrc"
 alias z="sudo gedit ~/.zshrc"
@@ -61,7 +61,7 @@ alias mc="make clean"
 alias ma="make all"
 alias mr="make run"
 
-############################## MVPC ##################################
+################################################################################ MVPC
 
 alias sg0="cd ~/gap_sdk/configs && source gapoc_b_v2.sh && cd"
 alias sg1="cd ~/gap_sdk_v4.9.0/configs && source gapoc_b_v2.sh && cd"
@@ -75,7 +75,7 @@ export OPENOCD_CABLE=interface/jlink.cfg
 
 alias gappi='ssh pi@192.168.0.$pi'
 
-############################# CONDA #############################
+################################################################################ CONDA
 
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/z/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -92,7 +92,7 @@ unset __conda_setup
 
 eval "$(register-python-argcomplete conda)"
 
-########################## DEFAULT ZSH ##############################
+################################################################################ DEFAULT ZSH
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
