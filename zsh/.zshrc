@@ -1,38 +1,17 @@
 ########## DOWNLOAD PLUGINS: USE ONCE AND THEN COMMENT ALL ##########
 
+## ANTIGEN
+#curl -L git.io/antigen > antigen.zsh
+#antigen bundle zsh-users/zsh-history-substring-search
+#antigen bundle zsh-users/zsh-autosuggestions
+#antigen bundle zsh-users/zsh-syntax-highlighting
+
 ## MANUAL
 ## zsh-autosuggestions
 # git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
-## ANTIGEN
-#antigen bundle zsh-users/zsh-history-substring-search
-#antigen bundle zsh-users/zsh-autosuggestions
-#antigen bundle seebi/dircolors-solarized
-#antigen bundle zsh-users/zsh-syntax-highlighting
-
-############################# ANTIGEN #############################
-
-#source /home/$USER/antigen.zsh
-
-## Load the oh-my-zsh's library.
-#antigen use oh-my-zsh
-
-## Bundles from the default repo (robbyrussell's oh-my-zsh).
-#antigen bundle git
-#antigen bundle heroku
-#antigen bundle pip
-#antigen bundle lein
-#antigen bundle command-not-found
-
-# Syntax highlighting bundle.
-#antigen bundle zsh-users/zsh-syntax-highlighting
-
-# Load the theme.
-#antigen theme robbyrussell
-
-# Tell Antigen that you're done.
-#antigen apply
-
+## zsh-syntax-highlighting
+# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ################################# ZSH #################################
 
 # Path to oh-my-zsh installation.
@@ -40,7 +19,7 @@ export ZSH="/home/$USER/.oh-my-zsh"
 
 ZSH_THEME="max"
 
-plugins=(git zsh-autosuggestions sudo web-search copypath copyfile)
+plugins=(git zsh-autosuggestions sudo web-search copypath copyfile zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -95,29 +74,6 @@ export OPENOCD_CABLE=interface/jlink.cfg
 
 alias gappi='ssh pi@192.168.0.$pi'
 
-############################# ROS #############################
-
-## ROS2
-#source /opt/ros/foxy/setup.zsh
-#source /usr/share/colcon_cd/function/colcon_cd.sh
-#export _colcon_cd_root=~/ros2_install
-
-## ROS1
-source /opt/ros/noetic/setup.zsh
-#source ~/ROS_WS/devel/setup.zsh
-export ROS_MASTER_URI=http://192.168.0.5:11311
-export ROS_HOSTNAME=192.168.0.5
-
-## carla-ros bridge
-export CARLA_ROOT=/opt/carla-simulator
-#export PYTHONPATH=$PYTHONPATH:$CARLA_ROOT/PythonAPI/carla/dist/carla-0.9.11-py3.7
-#source ~/carla-ros-bridge/catkin_ws/devel/setup.zsh
-
-############################# CUDA #############################
-
-CUDA_VERSION=11.6
-export PATH="/usr/local/cuda-$CUDA_VERSION/bin:$PATH"
-export LD_LIBRARY_PATH="/usr/local/cuda-$CUDA_VERSION/lib64:$LD_LIBRARY_PATH"
 
 ############################# CONDA #############################
 
