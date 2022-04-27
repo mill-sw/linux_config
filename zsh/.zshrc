@@ -32,7 +32,7 @@ export UPDATE_ZSH_DAYS=30
 # DISABLE_AUTO_UPDATE="true"
 
 ## COMPLETION
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 # CASE_SENSITIVE="true"
 # make _ and - same : CASE_SENSITIVE must be off
 # HYPHEN_INSENSITIVE="true"
@@ -63,12 +63,17 @@ alias mr="make run"
 
 ################################################################################ MVPC
 
-alias sg0="cd ~/gap_sdk/configs && source gapoc_b_v2.sh && cd"
+alias sg0="cd ~/gap_sdk_v4.7.0/configs && source gapoc_b_v2.sh && cd ../occupancy_management/gap8_project_v2"
 alias sg1="cd ~/gap_sdk_v4.9.0/configs && source gapoc_b_v2.sh && cd"
-alias om="cd ~/occupancy_management/gap8_project_v2"
+
+alias cal="cd ~/gap_sdk_v4.7.0/configs && source gapoc_b_v2.sh && cd ../occupancy_management/dataset_tools/gap8_capture_raw_images && make clean all run"
+alias calcp="cp offset_img/Calibration.bin ../../gap8_project_v2/Calibration/"
+
+alias ca_nn="conda activate nntool"
 
 alias gv="platform=gvsoc"
 alias gvr="platform=gvsoc runner_args=--vcd"
+alias gvr="make all run platform=gvsoc runner_args='--trace=insn'"
 
 export GAPY_OPENOCD_CABLE=interface/jlink.cfg
 export OPENOCD_CABLE=interface/jlink.cfg
