@@ -52,3 +52,5 @@ ${PR_MAGENTA}%D{%a,%b%d}${PR_NO_COLOUR}'
 PS2='${PR_CYAN}\
 ${PR_LIGHT_GREEN}%(_${PR_BLUE})\
 ${PR_CYAN}${PR_NO_COLOUR} '
+
+#######################################################
