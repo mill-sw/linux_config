@@ -46,6 +46,17 @@ source $ZSH/oh-my-zsh.sh
 
 alias zt="sudo gedit ~/.oh-my-zsh/themes/max.zsh-theme "
 
+## UPDATE
+DISABLE_UPDATE_PROMPT="true"
+# DISABLE_AUTO_UPDATE="true"
+# export UPDATE_ZSH_DAYS=13
+
+## COMMAND
+# ENABLE_CORRECTION="true"
+# CASE_SENSITIVE="true"
+# make _ and - same(Case-sensitive completion must be off) : use hyphen-insensitive completion
+# HYPHEN_INSENSITIVE="true"
+
 ############################# ALIAS #############################
 
 alias sz="source ~/.zshrc"
@@ -89,33 +100,14 @@ alias gappi='ssh pi@192.168.0.$pi'
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
-
-# Uncomment the following line to use hyphen-insensitive completion.
-# Case-sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
-
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment the following line to automatically update without prompting.
-# DISABLE_UPDATE_PROMPT="true"
-
-# Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment the following line if pasting URLs and other text is messed up.
+# Uncomment if pasting URLs and other text is messed up
 # DISABLE_MAGIC_FUNCTIONS="true"
 
-# Uncomment the following line to disable colors in ls.
+# Uncomment disables colors in ls
 # DISABLE_LS_COLORS="true"
 
-# Uncomment the following line to disable auto-setting terminal title.
+# Uncomment disables auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
-
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
@@ -135,7 +127,6 @@ alias gappi='ssh pi@192.168.0.$pi'
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 # User configuration
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
