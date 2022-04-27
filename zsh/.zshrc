@@ -35,7 +35,7 @@
 
 ################################# ZSH #################################
 
-# Path to your oh-my-zsh installation.
+# Path to oh-my-zsh installation.
 export ZSH="/home/$USER/.oh-my-zsh"
 
 ZSH_THEME="max"
@@ -48,8 +48,8 @@ alias zt="sudo gedit ~/.oh-my-zsh/themes/max.zsh-theme "
 
 ## UPDATE
 DISABLE_UPDATE_PROMPT="true"
+export UPDATE_ZSH_DAYS=30
 # DISABLE_AUTO_UPDATE="true"
-# export UPDATE_ZSH_DAYS=13
 
 ## COMPLETION
 # ENABLE_CORRECTION="true"
