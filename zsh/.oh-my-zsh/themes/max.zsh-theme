@@ -1,8 +1,4 @@
-### PUT THIS FILE IN THE FOLLOWING AND SET zshrc ###
-# ZSH_THEME="max"
-# nano ~/.oh-my-zsh/themes/max.zsh-theme
-
-#####################################################
+######################## INIT ########################
 
 # Set the prompt - Need this so the prompt will work.
 setopt prompt_subst
