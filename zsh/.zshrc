@@ -50,6 +50,7 @@ alias r="sudo dpkg -r"
 alias n="nano"
 alias g="gedit"
 alias o="xdg-open ."
+alias zt="~/.oh-my-zsh/themes/max.zsh-theme"
 
 alias rb="sudo reboot now"
 alias sd="sudo shutdown now"
