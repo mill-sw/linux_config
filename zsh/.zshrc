@@ -24,8 +24,6 @@ plugins=(git zsh-autosuggestions sudo web-search copypath copyfile zsh-syntax-hi
 
 source $ZSH/oh-my-zsh.sh
 
-alias zt="sudo gedit ~/.oh-my-zsh/themes/max.zsh-theme "
-
 ## UPDATE
 DISABLE_UPDATE_PROMPT="true"
 export UPDATE_ZSH_DAYS=30
@@ -50,7 +48,7 @@ alias r="sudo dpkg -r"
 alias n="nano"
 alias g="gedit"
 alias o="xdg-open ."
-alias zt="~/.oh-my-zsh/themes/max.zsh-theme"
+alias zz="sudo gedit ~/.oh-my-zsh/themes/max.zsh-theme "
 
 alias rb="sudo reboot now"
 alias sd="sudo shutdown now"
