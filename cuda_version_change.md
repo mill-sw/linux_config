@@ -25,4 +25,6 @@
     print(tensorflow.test.gpu_device_name())
     print(tensorflow.test.is_gpu_available())”
     
-    
+## 7.make sure you add your cuda-X.x lib64 paths    
+    export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
+    export LD_LIBRARY_PATH="/usr/local/cuda/lib64:/usr/local/cuda-10.1/lib64:/usr/local/cuda-11/lib64:/usr/local/cuda-11.1/lib64:/usr/local/cuda-11.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
