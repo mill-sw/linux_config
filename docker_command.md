@@ -16,6 +16,6 @@
 
 ## delete
 ### delete one image
-    sudo docker rmi -f <hub id>/<image name>:<tag name>
+    sudo docker rmi -f {ID OR REPOSITORY:TAG}
 ### delete all images
     sudo docker system prune -a
