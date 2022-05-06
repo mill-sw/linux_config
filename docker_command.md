@@ -1,4 +1,6 @@
 ## general
+### docker elevate sudo
+    sudo usermod -aG docker $USER
 ### build container
     docker build -t {ID or REPOSITORY:TAG} .
 ### run image
