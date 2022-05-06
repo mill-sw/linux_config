@@ -13,7 +13,9 @@
 ## delete
 ### delete one image
     docker rmi -f {ID or REPOSITORY:TAG}
-### delete all images
+### remove all containers
+    docker container prune
+### remove all images
     docker system prune -a
     
 ## dockerhub
