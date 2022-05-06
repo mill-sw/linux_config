@@ -1,21 +1,21 @@
 ## general
 ### build container
-    sudo docker build -t <hub id>/<image name>:<tag name> .
+    docker build -t {ID or REPOSITORY:TAG} .
 ### run image
-    sudo docker run <hub id>/<image name>:<tag name>
+    docker run {ID or REPOSITORY:TAG}
 ### check image list
-    sudo docker image list
+    docker image list
 ### pull mongoDB from dockerhub
-    sudo docker pull mongo:latest
-    
-## dockerhub
-### dockerhub login
-    sudo docker login
-### push to dockerhub
-    sudo docker push <hub id>/<image name>:<tag name>
+    docker pull mongo:latest
 
 ## delete
 ### delete one image
-    sudo docker rmi -f {ID or REPOSITORY:TAG}
+    docker rmi -f {ID or REPOSITORY:TAG}
 ### delete all images
-    sudo docker system prune -a
+    docker system prune -a
+    
+## dockerhub
+### dockerhub login
+    docker login
+### push to dockerhub
+    docker push {ID or REPOSITORY:TAG}
