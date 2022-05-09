@@ -17,6 +17,8 @@
 ## delete
 ### delete one image
     docker rmi -f {ID or REPOSITORY:TAG}
+### remove all unused containers
+    docker rm $(docker ps --filter status=exited -q)
 ### remove all containers
     docker container prune
 ### remove all images
