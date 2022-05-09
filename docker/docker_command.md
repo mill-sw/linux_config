@@ -2,9 +2,9 @@
 ### docker elevate sudo
     sudo usermod -aG docker $USER
 ### build container
-    docker build -t {ID or REPOSITORY:TAG} .
+    docker build -t {IMAGE ID or REPOSITORY:TAG} .
 ### run image
-    docker run {ID or REPOSITORY:TAG}
+    docker run {IMAGE ID or REPOSITORY:TAG}
 ### check image list
     docker image list
 ### pull mongoDB from dockerhub
@@ -14,9 +14,13 @@
 ### mount HOST to REMOTE
     docker run -it -v $HOME:/home/host {IMAGE ID}
 
+## save
+### save container state
+    docker commit {CONTAINER ID} {IMAGE NAME:VERSION}
+    
 ## delete
 ### delete one image
-    docker rmi -f {ID or REPOSITORY:TAG}
+    docker rmi -f {IMAGE ID or REPOSITORY:TAG}
 ### remove all unused containers
     docker rm $(docker ps --filter status=exited -q)
 ### remove all containers
@@ -28,7 +32,7 @@
 ### dockerhub login
     docker login
 ### push to dockerhub
-    docker push {ID or REPOSITORY:TAG}
+    docker push {IMAGE ID or REPOSITORY:TAG}
 ## GUI - portainer
     sudo docker volume create portainer_data
     sudo docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
