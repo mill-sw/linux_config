@@ -28,6 +28,15 @@
 ### remove all images
     docker system prune -a
     
+## display
+### desktop display
+    nvidia-docker run -it \
+    -e DISPLAY=unix$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --privileged \
+    -h tf3 \
+    --name tf3 \
+    -v /docker/data:/data \
+    {IMAGE NAME:VERSION} bash
+    
 ## dockerhub
 ### dockerhub login
     docker login
