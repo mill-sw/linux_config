@@ -18,6 +18,13 @@
 ### save container state
     docker commit {CONTAINER ID} {IMAGE NAME:VERSION}
     
+## rename
+### rename container
+    docker rename {OLD_CONTAINER_NAME} {NEW_CONTAINER_NAME}
+### rename image
+    docker tag {OLD_IMAGE_NAME} {NEW_IMAGE_NAME}
+    
+    
 ## delete
 ### delete one image
     docker rmi -f {IMAGE ID or REPOSITORY:TAG}
