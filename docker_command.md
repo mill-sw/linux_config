@@ -9,6 +9,10 @@
     docker image list
 ### pull mongoDB from dockerhub
     docker pull mongo:latest
+    
+## run
+### mount HOME to home
+    docker run -it -v $HOME/mount:/home {IMAGE ID}
 
 ## delete
 ### delete one image
