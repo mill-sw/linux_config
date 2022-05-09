@@ -40,8 +40,8 @@ ENABLE_CORRECTION="true"
 alias sz="source ~/.zshrc"
 alias z="sudo gedit ~/.zshrc"
 
-alias i="sudo apt install"
-alias u="sudo apt update && sudo apt upgrade && sudo snap refresh"
+alias i="sudo apt install -y"
+alias u="sudo apt update && sudo apt upgrade -y && sudo snap refresh"
 alias a="sudo apt autoclean && sudo apt autoremove"
 alias r="sudo dpkg -r"
 
