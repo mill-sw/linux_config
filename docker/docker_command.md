@@ -53,3 +53,6 @@
     sudo docker volume create portainer_data
     sudo docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
     
+## ERROR
+### Error NO_PUBKEY A4B469963BF863CC
+    https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/3bf863cc.pub
