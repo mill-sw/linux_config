@@ -55,4 +55,4 @@
     
 ## ERROR
 ### Error NO_PUBKEY A4B469963BF863CC
-    https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/3bf863cc.pub
+    RUN apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/3bf863cc.pub
