@@ -1,5 +1,7 @@
 ################################################################################ DOWNLOAD ONCE
 
+HOME="/root"
+
 ## ARGCOMPLETE
 #pip3 install argcomplete
 #activate-global-python-argcomplete
@@ -8,15 +10,15 @@
 
 ## MANUAL
 ## zsh-autosuggestions
-#git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+#git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 ## zsh-syntax-highlighting
-#git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+#git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 ################################################################################ ZSH
 
 # Path to oh-my-zsh installation.
-export ZSH="/root/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="max"
 
@@ -38,7 +40,7 @@ ENABLE_CORRECTION="true"
 ################################################################################ ALIAS
 
 alias sz="source ~/.zshrc"
-alias z="gedit ~/.zshrc"
+alias z="nano ~/.zshrc"
 
 alias i="apt install -y"
 alias u="apt update && sudo apt upgrade -y && sudo snap refresh"
