@@ -11,8 +11,8 @@
     docker pull mongo:latest
     
 ## run
-### mount HOME to home
-    docker run -it -v $HOME/mount:/home {IMAGE ID}
+### mount HOST to REMOTE
+    docker run -it -v $HOME:/home/host {IMAGE ID}
 
 ## delete
 ### delete one image
