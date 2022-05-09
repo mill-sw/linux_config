@@ -38,20 +38,20 @@ ENABLE_CORRECTION="true"
 ################################################################################ ALIAS
 
 alias sz="source ~/.zshrc"
-alias z="sudo gedit ~/.zshrc"
+alias z="gedit ~/.zshrc"
 
-alias i="sudo apt install -y"
-alias u="sudo apt update && sudo apt upgrade -y && sudo snap refresh"
-alias a="sudo apt autoclean && sudo apt autoremove"
-alias r="sudo dpkg -r"
+alias i="apt install -y"
+alias u="apt update && sudo apt upgrade -y && sudo snap refresh"
+alias a="apt autoclean && sudo apt autoremove"
+alias r="dpkg -r"
 
 alias n="nano"
 alias g="gedit"
 alias o="xdg-open ."
-alias zz="sudo gedit ~/.oh-my-zsh/themes/max.zsh-theme "
+alias zz="gedit ~/.oh-my-zsh/themes/max.zsh-theme "
 
-alias rb="sudo reboot now"
-alias sd="sudo shutdown now"
+alias rb="reboot now"
+alias sd="shutdown now"
 
 ## make
 alias mcar="make clean all run"
@@ -59,25 +59,6 @@ alias mar="make all run"
 alias mc="make clean"
 alias ma="make all"
 alias mr="make run"
-
-################################################################################ MVPC
-
-alias sg0="cd ~/gap_sdk_v4.7.0/configs && source gapoc_b_v2.sh && cd ../occupancy_management/gap8_project_v2"
-alias sg1="cd ~/gap_sdk_v4.9.0/configs && source gapoc_b_v2.sh && cd"
-
-alias cal="cd ~/gap_sdk_v4.7.0/configs && source gapoc_b_v2.sh && cd ../occupancy_management/dataset_tools/gap8_capture_raw_images && make clean all run"
-alias calcp="cp offset_img/Calibration.bin ../../gap8_project_v2/Calibration/"
-
-alias ca_nn="conda activate nntool"
-
-alias gv="platform=gvsoc"
-alias gvr="platform=gvsoc runner_args=--vcd"
-alias gvr="make all run platform=gvsoc runner_args='--trace=insn'"
-
-export GAPY_OPENOCD_CABLE=interface/jlink.cfg
-export OPENOCD_CABLE=interface/jlink.cfg
-
-alias gappi='ssh pi@192.168.0.$pi'
 
 ################################################################################ CONDA
 
