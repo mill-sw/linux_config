@@ -3,17 +3,15 @@
     sudo usermod -aG docker $USER
 ### build container
     docker build -t {IMAGE ID or REPOSITORY:TAG} .
-### run image
-    docker run {IMAGE ID or REPOSITORY:TAG}
-### check image list
-    docker image list
 ### pull mongoDB from dockerhub
     docker pull mongo:latest
     
 ## run
 ### mount HOST to REMOTE
     docker run -it -v $HOME:/home/host {IMAGE ID}
-
+### run image
+    docker run {IMAGE ID or REPOSITORY:TAG}
+    
 ## save
 ### save container state
     docker commit {CONTAINER ID} {IMAGE NAME:VERSION}
