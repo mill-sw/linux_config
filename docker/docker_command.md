@@ -1,31 +1,32 @@
-## general
+# general
 ### docker elevate sudo
     sudo usermod -aG docker $USER
+### pull from dockerhub
+    docker pull {option} {IMAGE_NAME:VERSION}
 ### build container
-    docker build -t {IMAGE ID or REPOSITORY:TAG} .
-### pull mongoDB from dockerhub
-    docker pull mongo:latest
+    docker build {option} {IMAGE_ID or REPOSITORY:TAG} .
     
-## run
+# run
 ### mount HOST to REMOTE
-    docker run -it -v $HOME:/home/host {IMAGE ID}
+    docker run -it -v $HOME:/host_home {IMAGE ID}
 ### run image
-    docker run {IMAGE ID or REPOSITORY:TAG}
+    docker run {IMAGE ID / REPOSITORY:TAG}
     
-## save
+# save
 ### save container state
-    docker commit {CONTAINER ID} {IMAGE NAME:VERSION}
+    docker commit {option:-p(container to image)} {CONTAINER_ID} {NEW_IMAGE_NAME:VERSION}
+### export container
+    docker export {CONTAINER_ID / CONTAINER_NAME:VERSION} > {NEW_FILE_NAME.tar}
     
-## rename
+# rename
 ### rename container
     docker rename {OLD_CONTAINER_NAME} {NEW_CONTAINER_NAME}
 ### rename image
     docker tag {OLD_IMAGE_NAME} {NEW_IMAGE_NAME}
     
-    
-## delete
+# delete
 ### delete one image
-    docker rmi -f {IMAGE ID or REPOSITORY:TAG}
+    docker rmi -f {IMAGE_ID / IMAGE_NAME:TAG}
 ### remove all unused containers
     docker rm $(docker ps --filter status=exited -q)
 ### remove all containers
