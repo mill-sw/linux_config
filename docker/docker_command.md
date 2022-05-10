@@ -46,9 +46,9 @@
     docker rmi -f {IMAGE_ID / IMAGE_NAME:TAG}
 ### remove all unused containers
     docker rm $(docker ps --filter status=exited -q)
-### remove all containers
-    docker container prune
-### remove all images
+### unsued
+    docker {container / image / volume / network} prune {option: -a(), -f(force), --filter(ie:until=24h)}
+### all
     docker system prune -a
     
 # DISPLAY
