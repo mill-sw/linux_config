@@ -20,10 +20,12 @@
 - /bin/bash : place to start to container
         
 # RUN
+### start prev container
+    docker start -i {IMAGE_ID / IMAGE_NAME:TAG}
 ### mount HOST to REMOTE
     docker run -it -v $HOME:/host_home {IMAGE ID}
 ### run image
-    docker run {IMAGE ID / REPOSITORY:TAG}
+    docker run {IMAGE_ID / REPOSITORY:TAG}
     
 # SAVE
 ### save container state
