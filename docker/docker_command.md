@@ -8,7 +8,7 @@
     sudo apt-get update && sudo apt-get install -y nvidia-container-toolkit
     sudo service docker restart
 ### build container
-    docker build {option} {IMAGE_ID or REPOSITORY:TAG} .  
+    docker build {option} {IMAGE_ID / REPOSITORY:TAG} .  
 ### GUI - portainer
     docker volume create portainer_data
     docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
@@ -21,9 +21,9 @@
         
 # RUN
 ### start prev container
-    docker start -i {IMAGE_ID / IMAGE_NAME:TAG}
+    docker start -i {IMAGE_ID/IMAGE_NAME:TAG}
 ### mount HOST to REMOTE
-    docker run -it -v $HOME:/host_home {IMAGE ID}
+    docker run -it -v $HOME:/host_home {IMAGE_ID}
 ### run image
     docker run {IMAGE_ID / REPOSITORY:TAG}
     
