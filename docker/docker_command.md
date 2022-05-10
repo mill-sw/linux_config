@@ -18,7 +18,11 @@
 - -v : insert host filesystem to remote
 - --gpus all : use gpu
 - /bin/bash : place to start to container
-        
+
+# INSPECT
+### inspect /var/lib/docker/containers/{CONTAINER_ID}/config.v2.json
+    docker inspect {CONTAINER_ID}
+    
 # RUN
 ### start prev container
     docker start -i {IMAGE_ID/IMAGE_NAME:TAG}
