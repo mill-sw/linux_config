@@ -1,8 +1,6 @@
 # general
 ### docker elevate sudo
     sudo usermod -aG docker $USER
-### pull from dockerhub
-    docker pull {option} {IMAGE_NAME:VERSION}
 ### build container
     docker build {option} {IMAGE_ID or REPOSITORY:TAG} .
     
@@ -14,9 +12,11 @@
     
 # save
 ### save container state
-    docker commit {option:-p(container to image)} {CONTAINER_ID} {NEW_IMAGE_NAME:VERSION}
+    docker commit {option:-p(container to image)} {CONTAINER_ID} {NEW_IMAGE_NAME:TAG}
 ### export container
-    docker export {CONTAINER_ID / CONTAINER_NAME:VERSION} > {NEW_FILE_NAME.tar}
+    docker export {CONTAINER_ID / CONTAINER_NAME:TAG} > {NEW_FILE_NAME.tar}
+### import container
+    docker import {FILE_NAME.tar} {NEW_IMAGE_NAME:TAG}
     
 # rename
 ### rename container
@@ -34,7 +34,7 @@
 ### remove all images
     docker system prune -a
     
-## display
+# display
 ### desktop display
     nvidia-docker run -it \
     -e DISPLAY=unix$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --privileged \
@@ -43,15 +43,17 @@
     -v /docker/data:/data \
     {IMAGE NAME:VERSION} bash
     
-## dockerhub
+# dockerhub
 ### dockerhub login
     docker login
-### push to dockerhub
-    docker push {IMAGE ID or REPOSITORY:TAG}
+### pull
+    docker pull {option} {IMAGE_NAME:TAG}
+### push
+    docker push {option} {IMAGE_ID / REPOSITORY:TAG}
 ## GUI - portainer
-    sudo docker volume create portainer_data
-    sudo docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
+    docker volume create portainer_data
+    docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
     
-## ERROR
+# ERROR
 ### Error NO_PUBKEY A4B469963BF863CC
     RUN apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/3bf863cc.pub
