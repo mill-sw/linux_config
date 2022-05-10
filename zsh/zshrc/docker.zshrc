@@ -1,7 +1,5 @@
 ################################################################################ DOWNLOAD ONCE
 
-HOME="/root"
-
 ## ARGCOMPLETE
 #pip3 install argcomplete
 #activate-global-python-argcomplete
