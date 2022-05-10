@@ -2,7 +2,10 @@
 ### docker elevate sudo
     sudo usermod -aG docker $USER
 ### build container
-    docker build {option} {IMAGE_ID or REPOSITORY:TAG} .
+    docker build {option} {IMAGE_ID or REPOSITORY:TAG} .  
+### GUI - portainer
+    docker volume create portainer_data
+    docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
     
 # run
 ### mount HOST to REMOTE
@@ -43,6 +46,7 @@
     -v /docker/data:/data \
     {IMAGE NAME:VERSION} bash
     
+    
 # dockerhub
 ### dockerhub login
     docker login
@@ -50,9 +54,7 @@
     docker pull {option} {IMAGE_NAME:TAG}
 ### push
     docker push {option} {IMAGE_ID / REPOSITORY:TAG}
-## GUI - portainer
-    docker volume create portainer_data
-    docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
+    
     
 # ERROR
 ### Error NO_PUBKEY A4B469963BF863CC
