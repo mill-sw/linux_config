@@ -13,6 +13,12 @@
     docker volume create portainer_data
     docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
     
+# OPTIONS
+- -it : iterative terminal, exit container without stopping
+- -v : insert host filesystem to remote
+- --gpus all : use gpu
+- /bin/bash : place to start to container
+        
 # RUN
 ### mount HOST to REMOTE
     docker run -it -v $HOME:/host_home {IMAGE ID}
