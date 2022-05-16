@@ -43,6 +43,7 @@ alias z="sudo gedit ~/.zshrc"
 alias i="sudo apt install -y"
 alias u="sudo apt update && sudo apt upgrade -y && sudo snap refresh"
 alias ud="sudo apt dist-upgrade -y"
+alias uf="sudo apt --fix-broken install -y"
 alias a="sudo apt autoclean && sudo apt autoremove"
 alias r="sudo dpkg -r"
 
