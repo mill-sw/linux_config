@@ -46,6 +46,7 @@ alias ud="sudo apt dist-upgrade -y"
 alias uf="sudo apt --fix-broken install -y"
 alias a="sudo apt autoclean && sudo apt autoremove"
 alias r="sudo dpkg -r"
+alias re="sudo dpkg --configure -a"
 
 alias n="nano"
 alias g="gedit"
