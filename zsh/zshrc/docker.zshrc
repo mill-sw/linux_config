@@ -15,6 +15,8 @@
 
 ################################################################################ ZSH
 
+export BASE="/host/media/z/0/MVPC10/CODE/"
+
 # Path to oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
