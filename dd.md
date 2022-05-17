@@ -1,3 +1,6 @@
+## BACKUP OS IMAGE
+    http://comfilewiki.co.kr/en/doku.php?id=cupc:backup_restore:index
+
 ## copy img
 ### 1 check name of the device
     sudo fdisk -l   #sudo lsblk -l
