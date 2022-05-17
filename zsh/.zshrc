@@ -37,21 +37,27 @@ ENABLE_CORRECTION="true"
 
 ################################################################################ ALIAS
 
-alias sz="source ~/.zshrc"
-alias z="sudo gedit ~/.zshrc"
+## APT
+alias i="sudo apt install"
+alias iy="sudo apt install -y"
 
-alias i="sudo apt install -y"
-alias u="sudo apt update && sudo apt upgrade -y && sudo snap refresh"
-alias ud="sudo apt dist-upgrade -y"
-alias uf="sudo apt --fix-broken install -y"
+alias u="sudo apt update && sudo apt upgrade"
+alias uy="sudo apt update && sudo apt upgrade -y && sudo snap refresh"
+alias ud="sudo apt dist-upgrade"
+alias uf="sudo apt --fix-broken install"
+
 alias a="sudo apt autoclean && sudo apt autoremove"
 alias r="sudo dpkg -r"
 alias re="sudo dpkg --configure -a"
 
+## sys
+alias sz="source ~/.zshrc"
+alias z="sudo gedit ~/.zshrc"
+alias zz="sudo gedit ~/.oh-my-zsh/themes/max.zsh-theme "
+
 alias n="nano"
 alias g="gedit"
 alias o="xdg-open ."
-alias zz="sudo gedit ~/.oh-my-zsh/themes/max.zsh-theme "
 
 alias rb="sudo reboot now"
 alias sd="sudo shutdown now"
