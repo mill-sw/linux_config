@@ -1,6 +1,8 @@
 # GENERAL
 ### docker elevate sudo
     sudo usermod -aG docker $USER
+### NVIDIA-CONTAINER-TOOLKIT
+    https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html
 ### link gui host:remote
     distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
     curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
