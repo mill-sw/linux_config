@@ -15,12 +15,13 @@
 
 ################################################################################ ZSH
 
+export python="python3"
 # Path to oh-my-zsh installation.
 export ZSH="/home/$USER/.oh-my-zsh"
 
 ZSH_THEME="max"
 
-plugins=(git zsh-autosuggestions sudo web-search copypath copyfile zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions sudo web-search copypath copyfile zsh-syntax-highlighting kubectl)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -105,6 +106,13 @@ else
     fi
 fi
 unset __conda_setup
+
+################################################################################ KUBERNETES
+
+#autoload -Uz compinit
+#compinit
+
+source <(kubectl completion zsh)
 
 ################################################################################ ETC
 
