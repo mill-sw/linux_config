@@ -56,8 +56,11 @@ alias z="sudo gedit ~/.zshrc"
 alias zz="sudo gedit ~/.oh-my-zsh/themes/max.zsh-theme "
 
 alias n="nano"
+alias sn="sudo nano"
 alias g="gedit"
+alias sg="sudo gedit"
 alias o="xdg-open ."
+alias so="sudo xdg-open ."
 
 alias rb="sudo reboot now"
 alias sd="sudo shutdown now"
