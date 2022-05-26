@@ -11,6 +11,9 @@
     sudo apt-get update
     sudo apt-get -y install cuda
 
+# cuDNN
+    https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html
+
 # VERSION CHANGE
 ## 1. Install wanted CUDA Toolkit versions
     sudo apt-get install cuda-toolkit-{version: 11-3}
