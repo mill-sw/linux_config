@@ -19,4 +19,4 @@
 ## apt
     apt update && apt upgrade
 ###
-    apt install git zsh gedit
+    apt install git zsh nano gedit
