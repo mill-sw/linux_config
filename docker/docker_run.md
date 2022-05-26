@@ -14,4 +14,7 @@
     tensorflow/tensorflow:2.1.0-gpu-py3
 
 # dependencies
+## cuda
+    sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/3bf863cc.pub 
+## apt
     apt install git zsh gedit
