@@ -18,5 +18,7 @@
     apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/3bf863cc.pub 
 ## apt
     apt update && apt upgrade
-###
+####
     apt install git zsh nano gedit
+#### ohmyzsh
+    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
