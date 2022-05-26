@@ -12,3 +12,6 @@
     --volume $HOME:/host \
     --name=tf2.1.0 \
     tensorflow/tensorflow:2.1.0-gpu-py3
+
+# dependencies
+    apt install git zsh gedit
