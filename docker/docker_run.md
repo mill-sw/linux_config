@@ -23,4 +23,4 @@
 #### ohmyzsh
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 #### zsh-theme
-    cat /host/home/z/.oh-my-zsh/themes/max.zsh-themes > /root/.oh-my-zsh/themes/max.zsh-themes  
+    cat /host/home/z/.oh-my-zsh/themes/max.zsh-theme > /root/.oh-my-zsh/themes/max.zsh-theme
