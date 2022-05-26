@@ -22,3 +22,5 @@
     apt install -y git zsh nano gedit
 #### ohmyzsh
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+#### zsh-theme
+    cat /host/home/.oh-my-zsh/themes/max.zsh-themes > /root/.oh-my-zsh/themes/max.zsh-themes  
