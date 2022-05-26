@@ -43,8 +43,8 @@ alias sz="source ~/.zshrc"
 alias z="nano ~/.zshrc"
 
 alias i="apt install -y"
-alias u="apt update && sudo apt upgrade -y && sudo snap refresh"
-alias a="apt autoclean && sudo apt autoremove"
+alias u="apt update && apt upgrade -y && snap refresh"
+alias a="apt autoclean && apt autoremove"
 alias r="dpkg -r"
 
 alias n="nano"
