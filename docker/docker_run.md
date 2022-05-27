@@ -19,7 +19,7 @@
 ## apt
     apt update && apt upgrade -y
 ####
-    apt install -y git zsh nano gedit
+    apt install -y git zsh curl nano gedit
 #### ohmyzsh
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 #### zsh-theme
