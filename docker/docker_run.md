@@ -24,4 +24,7 @@
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     cat /host/home/z/.oh-my-zsh/themes/max.zsh-theme > /root/.oh-my-zsh/themes/max.zsh-theme
 ### CONDA
+#### install
+    https://www.anaconda.com/products/distribution
+#### copy from local to docker
     cp /host/home/z/Downloads/Anaconda3-2022.05-Linux-x86_64.sh .
