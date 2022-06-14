@@ -45,6 +45,7 @@ alias n="nano"
 alias sn="sudo nano"
 alias g="gedit"
 alias sg="sudo gedit"
+
 alias o="xdg-open ."
 alias so="sudo xdg-open ."
 
