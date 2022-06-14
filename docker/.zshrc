@@ -62,6 +62,9 @@ alias mc="make clean"
 alias ma="make all"
 alias mr="make run"
 
+## pip
+alias p="pip3 install"
+
 ################################################################################ CONDA
 
 # !! Contents within this block are managed by 'conda init' !!
