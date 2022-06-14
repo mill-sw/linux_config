@@ -58,6 +58,9 @@ alias mc="make clean"
 alias ma="make all"
 alias mr="make run"
 
+## pip
+alias p="pip3 install"
+
 ################################################################################ MVPC
 
 alias sg0="cd ~/gap_sdk_v4.7.0/configs && source gapoc_b_v2.sh && cd ../occupancy_management/gap8_project_v2"
