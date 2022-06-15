@@ -1,3 +1,6 @@
+## gpu monitor
+    watch -n 0.1 nvidia-smi
+
 ## 1 필요한 만큼 메모리를 런타임에 할당
     gpus = tf.config.experimental.list_physical_devices('GPU')
     if gpus:
@@ -25,3 +28,6 @@
         # Virtual devices must be set before GPUs have been initialized
         print(e)
     
+### source link
+    https://www.tensorflow.org/guide/gpu
+    https://inpages.tistory.com/155
