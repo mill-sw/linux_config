@@ -78,8 +78,8 @@ alias gvr="platform=gvsoc runner_args=--vcd"
 alias gvr="make all run platform=gvsoc runner_args='--trace=insn'"
 
 #export GAPY_OPENOCD_CABLE=interface/ftdi/gapuino_ftdi.cfg
-export GAPY_OPENOCD_CABLE=interface/jlink.cfg
-export OPENOCD_CABLE=interface/jlink.cfg
+#export GAPY_OPENOCD_CABLE=interface/jlink.cfg
+#export OPENOCD_CABLE=interface/jlink.cfg
 
 alias gappi='ssh pi@192.168.0.$pi'
 
