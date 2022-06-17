@@ -27,6 +27,7 @@ ENABLE_CORRECTION="true"
 alias i="sudo apt install"
 alias iy="sudo apt install -y"
 
+alias ua="sudo apt update && sudo apt upgrade && sudo apt autoclean && sudo apt autoremove"
 alias u="sudo apt update && sudo apt upgrade"
 alias uy="sudo apt update && sudo apt upgrade -y && sudo snap refresh"
 alias ud="sudo apt dist-upgrade"
