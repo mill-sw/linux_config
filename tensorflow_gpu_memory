@@ -1,32 +1,26 @@
 ## gpu monitor
     watch -d -n 0.1 nvidia-smi
 
-## 1 필요한 만큼 메모리를 런타임에 할당
+## gpu memmory error fix
+    GPU_SET = 0
+
     gpus = tf.config.experimental.list_physical_devices('GPU')
+
     if gpus:
-      try:
-        # Currently, memory growth needs to be the same across GPUs
-        for gpu in gpus:
-          tf.config.experimental.set_memory_growth(gpu, True)
-        logical_gpus = tf.config.experimental.list_logical_devices('GPU')
-        print(len(gpus), "Physical GPUs,", len(logical_gpus), "Logical GPUs")
-      except RuntimeError as e:
-        # Memory growth must be set before GPUs have been initialized
-        print(e)
-    
-## 2 GPU에 할당되는 전체 메모리 크기를 제한
-    gpus = tf.config.experimental.list_physical_devices('GPU')
-    if gpus:
-      # Restrict TensorFlow to only allocate 1GB of memory on the first GPU
-      try:
-        tf.config.experimental.set_virtual_device_configuration(
-            gpus[0],
-            [tf.config.experimental.VirtualDeviceConfiguration(memory_limit=1024)])
-        logical_gpus = tf.config.experimental.list_logical_devices('GPU')
-        print(len(gpus), "Physical GPUs,", len(logical_gpus), "Logical GPUs")
-      except RuntimeError as e:
-        # Virtual devices must be set before GPUs have been initialized
-        print(e)
+        try:
+            if GPU_SET == 0:
+        ## 1 필요한 만큼 메모리를 런타임에 할당
+                for gpu in gpus:
+                    tf.config.experimental.set_memory_growth(gpu, True)
+            elif GPU_SET == 1:
+        ## 2 GPU에 할당되는 전체 메모리 크기를 제한
+                tf.config.experimental.set_virtual_device_configuration(
+                        gpus[0],
+                        [tf.config.experimental.VirtualDeviceConfiguration(memory_limit=6144)])
+            logical_gpus = tf.config.experimental.list_logical_devices('GPU')
+            print(len(gpus), "Physical GPUs,", len(logical_gpus), "Logical GPUs")
+        except RuntimeError as e:
+            print(e)
     
 ### source link
     https://www.tensorflow.org/guide/gpu
