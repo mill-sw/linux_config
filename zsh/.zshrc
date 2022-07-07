@@ -54,11 +54,11 @@ alias rb="sudo reboot now"
 alias sd="sudo shutdown now"
 
 ## make
-alias mcar="make clean all run"
-alias mca="make clean all"
-alias mar="make all run"
 alias mc="make clean"
+alias mca="make clean all"
+alias mcar="make clean all run"
 alias ma="make all"
+alias mar="make all run"
 alias mr="make run"
 
 ## pip
