@@ -56,11 +56,12 @@ alias rb="reboot now"
 alias sd="shutdown now"
 
 ## make
-alias mcar="make clean all run"
+alias mr="make run"
+alias ma="make all"
 alias mar="make all run"
 alias mc="make clean"
-alias ma="make all"
-alias mr="make run"
+alias mca="make clean all"
+alias mcar="make clean all run"
 
 ## pip
 alias p="pip3 install"
