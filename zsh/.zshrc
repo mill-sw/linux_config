@@ -55,6 +55,7 @@ alias sd="sudo shutdown now"
 
 ## make
 alias mcar="make clean all run"
+alias mca="make clean all"
 alias mar="make all run"
 alias mc="make clean"
 alias ma="make all"
